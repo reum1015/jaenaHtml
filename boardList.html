@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navBar fixed-top">
+      <div class="navContainer">
+        <div class="logo">
+          <a href="index.html">JAENA</a>
+        </div>
+        <div id="toggle-button">
+          <svg viewBox="0 0 100 70" width="35" height="35">
+            <rect width="100" height="15" rx="8"></rect>
+            <rect y="30" width="100" height="15" rx="8"></rect>
+            <rect y="60" width="100" height="15" rx="8"></rect>
+          </svg>
+        </div>
+
+        <div class="navMenu-wrapper">
+          <ul class="navbar-ul">
+            <li><a href="videoList.html">동영상</a></li>
+            <li><a href="galleryList.html">갤러리</a></li>
+            <li><a href="boardList.html">게시판</a></li>
+            <li>
+              <button type="button" id="login_button">로그인</button>
+            </li>
+            <li>
+              <form action="" class="searchForm">
+                <input type="search" name="" id="" placeholder="검색">
+              </form>
+            </li>
+          </ul>
+        </div>
+        <!--/. navbar-collapse navMenu-ul END -->
+      </div>
+      <!--/. navContainer END -->
+    </nav>
+  </header>
+  <!--/end header-->
+
+  <div class="container container-board">
+    <div class="titleBox">
+      <h3>Board</h3>
+    </div>
+    <div class="gallery-itemUloadLink-box clearfix">
+      <a href="boardUpload.html" class="gallery-itemUloadLink-btn">글쓰기</a>
+    </div>
+
+    <div class="content-board">
+      <div class="list-board-box">
+        <ul class="list-board-body responsive-table">
+          <li class="list-item table-header">
+            <div class="list-item-innerWrapper item-head">
+              <div class="board-list-item board-no">번호</div>
+              <div class="board-list-item board-title">제목</div>
+              <div class="board-list-item board-writer">작성자</div>
+              <div class="board-list-item board-date">작성일</div>
+              <div class="board-list-item board-count">조회</div>
+              <div class="board-list-item board-reply">댓글
+                <div class="reply-cnt">10</div>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no"><span>1</span></div>
+              <div class="board-list-item board-title">
+                <a href="#" >Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                </a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer"><span>헬로멍키순수</span></div>
+              <div class="board-list-item board-date"><span>2021-12-30</span></div>
+              <div class="board-list-item board-count"><span>3</span></div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >Lorem ipsum, dolor sit viqua</a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer">헌티드</div>
+              <div class="board-list-item board-date">2021-12-28</div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >오이도 출사 사진입니다</a>
+                <span class="reply-count">[3]</span>
+              </div>
+              <div class="board-list-item board-writer">헌티드</div>
+              <div class="board-list-item board-date">2021-12-28</div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >Lorem ipsum, dolor sit amet cpudiandae viqua
+                </a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer"><span>오나전야스리고고ssdwasdaw</span></div>
+              <div class="board-list-item board-date"><span>2021-12-28</span></div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >이제는 우리가 모두 갑시다 사랑합니다. 여러분
+                </a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer">헌티드</div>
+              <div class="board-list-item board-date">2021-12-28</div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, 
+                </a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer">헌티드</div>
+              <div class="board-list-item board-date">2021-12-28</div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, 
+                </a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer">헌티드</div>
+              <div class="board-list-item board-date">2021-12-28</div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item col">
+            <div class="list-item-innerWrapper">
+              <div class="board-list-item board-no">1</div>
+              <div class="board-list-item board-title">
+                <a href="#" >Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                  Lorem ipsum, dolor sit amet cpudiandae viqua
+                </a>
+                <span class="reply-count">[5]</span>
+              </div>
+              <div class="board-list-item board-writer">헌티드</div>
+              <div class="board-list-item board-date">2021-12-28</div>
+              <div class="board-list-item board-count">12</div>
+              <div class="board-list-item board-reply">
+                <span>댓글</span>   
+                <span class="reply-cnt-mobile">10</span>
+              </div>
+            </div>
+          </li>
+         
+        </ul>
+      </div>
+      <!-- /end .list-board-box  -->
+
+      <div class="pagination-box">
+        <ul class="pagination-ul">
+          <li><a href="#">&laquo;</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="page-active"><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- /. content END -->
+
+  </div>
+
+  <!--/end container-->
+  <footer>
+    <div>
+      <p id="">Copyright &copy; Jaena. Designed by
+        <a href="http://www.templatewire.com" rel="nofollow">JAENAWeb</a>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

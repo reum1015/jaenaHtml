@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navBar fixed-top">
+      <div class="navContainer">
+        <div class="logo">
+          <a href="index.html">JAENA</a>
+        </div>
+        <div id="toggle-button">
+          <svg viewBox="0 0 100 70" width="35" height="35">
+            <rect width="100" height="15" rx="8"></rect>
+            <rect y="30" width="100" height="15" rx="8"></rect>
+            <rect y="60" width="100" height="15" rx="8"></rect>
+          </svg>
+        </div>
+
+        <div class="navMenu-wrapper">
+          <ul class="navbar-ul">
+            <li><a href="videoList.html">동영상</a></li>
+            <li><a href="galleryList.html">갤러리</a></li>
+            <li><a href="boardList.html">게시판</a></li>
+            <li>
+              <button type="button" id="login_button">로그인</button>
+            </li>
+            <li>
+              <form action="" class="searchForm">
+                <input type="search" name="" id="" placeholder="검색">
+              </form>
+            </li>
+          </ul>
+        </div>
+        <!--/. navbar-collapse navMenu-ul END -->
+      </div>
+      <!--/. navContainer END -->
+    </nav>
+  </header>
+  <!--/end header-->
+
+  <div class="container container-gallery">
+    <div class="titleBox">
+      <h3>Board</h3>
+
+    </div>
+
+    <div class="content-galleryUpload">
+      <div class="UploadForm-box">
+        <form class="UploadForm">
+          <div class="UploadForm-dive">
+            <div class="UploadForm-left">
+              <div class="form-group">
+                <label for="title" class="form-label">제목</label>
+                <input type="text" id="title" name="title">
+              </div>
+              <div class="form-group">
+                <label for="content" class="form-label">내용</label>
+                <textarea id="content" name="content" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="UploadForm-right d-none">
+              <span>사진 업로드</span>
+              <div class="form-group image-box">
+                <label for="file-upload" class="form-label">사진 업로드</label>
+                <input type="file" id="file-upload">
+              </div>
+            </div>
+          </div>
+          <!-- / End .UploadForm-dive -->
+          <div class="form-group verifyCancel">
+            <button type="reset">취소</button>
+            <button type="submit">전송</button>
+          </div>
+        </form>
+        <!-- /End form.UploadForm -->
+      </div>
+      <!-- /End form .UploadForm-box -->
+    </div>
+    <!-- /End .content-galleryUpload -->
+  </div>
+  <!--/End container-->
+  <footer>
+    <div>
+      <p id="">Copyright &copy; Jaena. Designed by
+        <a href="http://www.templatewire.com" rel="nofollow">JAENAWeb</a>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
