@@ -483,13 +483,16 @@ header {height: 6.19%;}
   width: 90%;
   padding-top: 1.5em;
 }
-.content-wrapper{
-  display: grid;
+.video-content-wrapper{
+  /* display: grid;
   grid-template-areas: 
     "view-box side-box"
-    "reply-box side-box";
+    "reply-box none";
   grid-template-columns: 3fr 1fr;
-  padding-top: 2emg;
+  grid-template-rows: minmax(100px, auto);
+  padding-top: 2em; */
+
+  display: flex;
 }
 .iframe-container{
   position: relative;
@@ -510,16 +513,31 @@ header {height: 6.19%;}
   background-color: DarkGrey;
   grid-area: view-box;
 
+
 }
 .videoSide-box{
   background-color: Crimson;
   grid-area: side-box;
   padding-left: 1.5em;
+
 }
 .videoReply-box{
   background-color: DarkOliveGreen;
   grid-area: reply-box;
 }
+
+.video-left{
+  flex: 1;
+}
+.video-right{
+  /* flex-shrink: 1; */
+  flex-basis: 25%;
+}
+
+.related-video{
+
+}
+
 
 
 
@@ -767,6 +785,19 @@ footer>div {
   .UploadForm-left, .UploadForm-right {
     width: 100%;
     padding: 0 0em;
+  }
+
+  .video-content-wrapper{
+    /* display: grid;
+    grid-template-areas: 
+      "view-box side-box"
+      "reply-box none";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    padding-top: 2em; */
+  
+    display: flex;
+    flex-direction: column;
   }
 }
 
