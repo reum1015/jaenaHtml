@@ -11,6 +11,7 @@ html,body {
   box-sizing: border-box;
 }
 body,ul {margin: 0;padding: 0;font-size: 1rem;}
+h2{margin: 0;}
 input,button {font: inherit;}
 ul {list-style: none;}
 a {text-decoration: none;color: #000;}
@@ -488,7 +489,8 @@ header {height: 6.19%;}
 }
 .video-content-wrapper{
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr 1.5fr;
+  gap : 1.5em;
 }
 .iframe-container{
   position: relative;
@@ -506,18 +508,56 @@ header {height: 6.19%;}
   height: 100%;
 }
 .videoView-box{
-  background-color: DarkGrey;
+  /* background-color: DarkGrey; */
   width: 100%;
 
 }
 .videoSide-box{
-  background-color: Crimson;
+  /* background-color: Crimson; */
   grid-row: 1/4;
   grid-column-start: 2;
-
 }
+
+.video-list{
+  display: flex;
+  margin-top: 1em;
+}
+.next-video{
+  margin-top: 0;
+}
+.video-list .video-item{
+  position: relative;
+}
+.video-list .video-item .play-time{
+  font-size: 0.9em;
+}
+.video-list .video-item a, .video-info a{
+  display: block;
+  height: 100%;
+}
+.video-list .video-item a img{
+  width: 168px;
+  height: auto;
+}
+
+.video-info{
+  padding-left: 0.5em;
+  flex : 1;
+}
+.video-info a span{
+  display: block;
+}
+.video-info .video-title{
+  font-size: 1em;
+}
+.video-info .video-view,.video-info .video-date{
+  font-size: 0.9em;
+}
+
+
+
 .videoReply-box{
-  background-color: DarkOliveGreen;
+  /* background-color: DarkOliveGreen; */
 }
 
 
@@ -772,6 +812,7 @@ footer>div {
       "reply-box side-box";
     grid-template-columns: 1fr 1fr;
     padding-top: 2em;
+    gap : 0.5em;
   }
   .videoView-box{
     grid-area: view-box;
