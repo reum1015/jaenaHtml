@@ -28,20 +28,3 @@ function loginPageMove() {
 
 // 로그인 버튼 클릭 이벤트
 loginBtn.addEventListener('click', loginPageMove);
-
-
-const btt = document.getElementById("butn");
-
-btt.addEventListener('click', function(){
-  const myTag = document.querySelector(".video-left");
-  myTag.outerHTML = myTag.innerHTML;
-  const myTag1 = document.querySelector(".video-right");
-  myTag.outerHTML = myTag.innerHTML;
-});
-
-function ab(){
-  console.log('ab');
-}
-
-const media = matchMedia("screen and (max-width:576px)");
-media.addEventListener()
