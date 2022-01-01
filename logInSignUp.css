@@ -27,7 +27,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#login-form{
+#login-form, #signup-form{
     color: aliceblue;
     width: 50%;
     margin: 0 auto;
@@ -38,7 +38,7 @@ body{
     align-items: stretch;
 }
 
-#login-form h1{
+#login-form h1, #signup-form h1{
     padding: 1rem 0;
     font-size: 3rem;
 }
@@ -61,7 +61,7 @@ body{
 .login-box .form-group span{
     width: 1.5rem;
     position: absolute;
-    top : 1.8em;
+    top : 2.2em;
 }
 
 .login-box .form-group input{
@@ -92,6 +92,7 @@ body{
     padding: 0.5em 0;
     transition: all 0.5s;
     cursor: pointer;
+    text-align: center;
 }
 
 input:-webkit-autofill,
