@@ -482,7 +482,7 @@ header {height: 6.19%;}
 
 
 /* ------ Read 페이지 ------ */
-/* --- VideoRead --- */
+  /* --- VideoRead --- */
 .container-videoRead{
   width: 90%;
   padding-top: 1.5em;
@@ -507,30 +507,18 @@ header {height: 6.19%;}
   width: 100%;
   height: 100%;
 }
-.videoView-box{
-  /* background-color: DarkGrey; */
-  width: 100%;
-
-}
+.videoView-box{width: 100%;}
 .videoSide-box{
-  /* background-color: Crimson; */
   grid-row: 1/4;
   grid-column-start: 2;
 }
-
 .video-list{
   display: flex;
   margin-top: 1em;
 }
-.next-video{
-  margin-top: 0;
-}
-.video-list .video-item{
-  position: relative;
-}
-.video-list .video-item .play-time{
-  font-size: 0.9em;
-}
+.next-video{margin-top: 0;}
+.video-list .video-item{position: relative;}
+.video-list .video-item .play-time{font-size: 0.9em;}
 .video-list .video-item a, .video-info a{
   display: block;
   height: 100%;
@@ -539,28 +527,42 @@ header {height: 6.19%;}
   width: 168px;
   height: auto;
 }
-
 .video-info{
   padding-left: 0.5em;
   flex : 1;
 }
-.video-info a span{
-  display: block;
+.video-info a span{display: block;}
+.video-info .video-title{font-size: 1em;}
+.video-info .video-view,.video-info .video-date{font-size: 0.9em;}
+    /* --- VideoRead End --- */
+
+    /* --- GalleryRead --- */
+.galleryView-box img{
+  width: 100%;
+  height: auto;
 }
-.video-info .video-title{
-  font-size: 1em;
+.media{padding-top: 2em;}
+.comment_reply{padding-left: 1.5em;}
+.reply-content,.reply-head{margin: 0;}
+
+.reply-box{margin-top: 2em;}
+
+.reply-form{
+  display: flex;
+  justify-content: space-between;
 }
-.video-info .video-view,.video-info .video-date{
-  font-size: 0.9em;
+.reply-form textarea{width: 95%;}
+.reply-form button{width: 5%;}
+.reply-form button:hover{
+  background-color: #e07877;
+  cursor: pointer;
 }
 
+.reply-view{margin-top: 1.5em;}
 
+    /* --- GalleryRead End --- */
 
-.videoReply-box{
-  /* background-color: DarkOliveGreen; */
-}
-
-
+/* ------ Read 페이지 ------ */
 /* footer */
 footer {height: 5.8%;}
 

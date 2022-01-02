@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="logInSignUp.css">
-  <title>회원가입</title>
+  <title>SingUp</title>
 </head>
 
 <body class="login-page">
@@ -46,44 +46,46 @@
     </nav>
   </header>
   <!--/end header-->
-  <div class="container-logInfo">
-    <div class="login-box signup-box">
+  <div class="container-logInfo container-signInfo">
+    <div class="signup-box login-box">
       <form id="signup-form" class="login-form signup-form" action="#">
-        <h1 class="text-center">회 원 가 입</h1>
-        <div class="form-group userId-box">
-          <span class="user_icon">
-            <svg class="svg-inline--fa fa-user-circle fa-w-16 fa-2x" aria-hidden="true" data-prefix="fas"
-              data-icon="user-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-              data-fa-i2svg="">
-              <path fill="currentColor" d="M8 256C8 119.033 119.033 8 256 8s248 111.033 248 248-111.033 248-248 248S8 392.967 8 256zm72.455 125.868C119.657 436.446 183.673 472 256 472s136.343-35.554 
-                            175.545-90.132c-3.141-26.99-22.667-49.648-49.538-56.366l-32.374-8.093C323.565 339.79 290.722 352 256 352s-67.565-12.21-93.634-34.591l-32.374 8.093c-26.87 6.718-46.396 29.376-49.537 56.366zM144 
-                            208c0 61.856 50.144 112 112 112s112-50.144 112-112S317.856 96 256 96s-112 50.144-112 112z">
-              </path>
-            </svg>
-          </span>
-          <label for="userId" id="userId">아이디</label>
-          <input type="text" id="userId" name="userId">
+        <h1 class="text-center">JAENA</h1>
+        <div class="form-group">
+          <label for="userId">아이디</label>
+          <input type="text" id="userId">
+          <p class="validation validation-id">아이디를 정확이 입력</p>
         </div>
         <div class="form-group">
-          <span class="password_icon">
-            <svg class="svg-inline--fa fa-lock fa-w-14 fa-2x" aria-hidden="true" data-prefix="fas" data-icon="lock"
-              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-              <path fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 
-                            0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path>
-            </svg>
-          </span>
-          <label for="userPw">비밀번호</label>
-          <input type="password" id="userPw" name=userPw>
+          <label for="passWord">비밀번호</label>
+          <input type="password" id="passWord">
+          <p class="validation validation-pw">비밀번호 정확히 입력</p>
         </div>
-        <div class="rememberMe-Box">
-          <label for="rememberMe">아이디 기억</label>
-          <input type="checkbox" name="rememberMe" id="rememberMe">
+        <div class="form-group">
+          <label for="passWordConfirm">비밀번호 확인</label>
+          <input type="password" id="passWordConfirm">
+          <p class="validation validation-pwconfirm">비밀번호 정확히 입력</p>
         </div>
-        <button type="submit" id="login-btn">로그인</button>
-        <button type="button" id="signup-btn">회원가입</button>
-        <div class="find-info">
-          <a href="#" style="color: aliceblue;">아이디/비밀번호 찾기</a>
+        <div class="form-group">
+          <label for="nickName">별명</label>
+          <input type="text" id="nickName">
+          <p class="validation validation-nick">별명을 정확히 입력</p>
         </div>
+        <div class="form-group">
+          <label for="birthDay">생년월일</label>
+          <input type="date">
+          <p class="validation validation-birth">별명을 정확히 입력</p>
+        </div>
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email">
+          <p class="validation validation-email">별명을 정확히 입력</p>
+        </div>
+        <div class="form-group">
+          
+          <button type="reset" id="reset-btn">취소</button>
+          <button type="submit" id="signup-btn">회원가입</button>
+        </div>
+
       </form>
     </div>
   </div>

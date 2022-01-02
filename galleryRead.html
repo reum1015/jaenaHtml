@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <title>Gallery Upload</title>
+  <title>Gallery View</title>
 </head>
 
 <body>
@@ -49,44 +49,40 @@
   <div class="container container-gallery">
     <div class="titleBox">
       <h3>Gallery</h3>
-
     </div>
+    <div class="galleryView-box">
+      <img src="https://source.unsplash.com/random/?nature">
+      <!-- <img src="https://source.unsplash.com/random/?model"> -->
+      <p class="galleryView-content">안녕하세요 처음 이미지 입니다.</p>
+    </div>
+    <hr>
 
-    <div class="content-galleryUpload">
-      <div class="UploadForm-box">
-        <form class="UploadForm">
-          <div class="UploadForm-dive">
-            <div class="UploadForm-left">
-              <div class="form-group">
-                <label for="title" class="form-label">제목</label>
-                <input type="text" id="title" name="title">
-              </div>
-              <div class="form-group">
-                <label for="content" class="form-label">내용</label>
-                <textarea id="content" name="content" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="UploadForm-right">
-              <span>사진 업로드</span>
-              <div class="form-group image-box">
-                <label for="file-upload" class="form-label">사진 업로드</label>
-                <input type="file" id="file-upload">
-              </div>
-            </div>
-          </div>
-          <!-- / End .UploadForm-dive -->
-          <div class="form-group verifyCancel">
-            <button type="reset">취소</button>
-            <button type="submit">전송</button>
-          </div>
+    <div class="reply-box">
+      <div class="reply-write">
+        <form class="reply-form">
+          <textarea placeholder="댓글 작성" rows="4"></textarea>
+          <button type="submit">등록</button>
         </form>
-        <!-- /End form.UploadForm -->
       </div>
-      <!-- /End form .UploadForm-box -->
+      <!-- /END .reply-write -->
+
+      <div class="reply-view">
+        <div class="reply-head">
+          <span class="reply-writer">카라멜 마끼야또</span>
+          <P class="reply-content">
+            굿~ 좋은 사진 입니다.
+          </P>
+        </div>
+        <div class="reply-body">
+
+        </div>
+        
+      </div>
+      <!-- /END .reply-view -->
     </div>
-    <!-- /End .content-galleryUpload -->
+    <!-- /END .reply-box -->
   </div>
-  <!--/End container-->
+  <!--/end container-->
   <footer>
     <div>
       <p id="">Copyright &copy; Jaena. Designed by
