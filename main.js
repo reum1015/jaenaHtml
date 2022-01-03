@@ -28,3 +28,13 @@ function loginPageMove() {
 
 // 로그인 버튼 클릭 이벤트
 loginBtn.addEventListener('click', loginPageMove);
+
+//게시글 답글 클릭 Form show
+let replyButton = document.querySelector(".reply-add-button");
+replyButton.addEventListener('click',function(e){
+  e.preventDefault();
+  console.log(e.target);
+  let replyFormBox = document.querySelector(".reply-commentForm-box");
+  replyFormBox.style.display ="block";
+
+});

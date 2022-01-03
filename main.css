@@ -13,11 +13,13 @@ html,body {
 body,ul {margin: 0;padding: 0;font-size: 1rem;}
 h2{margin: 0;}
 input,button {font: inherit;}
+button{background-color: transparent;}
 ul {list-style: none;}
 a {text-decoration: none;color: #000;}
 textarea{font-family: inherit; font-size: 1em;}
 .text-center {text-align: center;}
 .d-none {display: none;}
+.d-show {display: block;}
 .form-label {margin-bottom: 0.5rem;}
 .clearfix::after {content: "";clear: both;display: table;}
 .living-coral{color: #FF6F61;}
@@ -541,24 +543,67 @@ header {height: 6.19%;}
   width: 100%;
   height: auto;
 }
-.media{padding-top: 2em;}
-.comment_reply{padding-left: 1.5em;}
-.reply-content,.reply-head{margin: 0;}
-
+.galleryView-content{font-size: 1.5em;}
 .reply-box{margin-top: 2em;}
-
 .reply-form{
   display: flex;
   justify-content: space-between;
 }
 .reply-form textarea{width: 95%;}
-.reply-form button{width: 5%;}
+.reply-form button{width: 5%;background-color: transparent;}
 .reply-form button:hover{
   background-color: #e07877;
   cursor: pointer;
 }
-
 .reply-view{margin-top: 1.5em;}
+.reply-content,.reply-head{margin: 0;}
+.reply-content{padding: 0.2em 0;}
+
+.reply-content{font-size: 1.2em; word-break: break-all;}
+.reply-add-button{padding-left: 1em;}
+
+.reply-item{margin-top: 1em;}
+.reply-item span:not(:first-child){
+  display: inline-block;
+  padding-top: 0.5em;
+  color: #777;
+  font-size: 0.9em;
+}
+.reply-comment{margin-left: 1.5em; margin-top: 1em;}
+.reply-commentForm-box{margin-top: 1em;}
+.reply-commentForm-box form{
+  display: flex;
+  flex-direction: column;
+}
+.reply-commentForm-box form div{
+  display: flex;
+  justify-content: flex-end;
+}
+.reply-commentForm-box input[type=text]{
+  border: 0;
+  border-bottom: 1px black solid;
+  transition: all .5s;
+}
+.reply-commentForm-box input[type=text]:focus{
+  border: 0;
+  border-bottom: 1px solid rgb(224, 151, 151);
+  outline: 0;
+}
+.reply-commentForm-box div button{
+  margin-top: 0.3em;
+  padding: 0.3em 0.5em;
+  background-color: transparent;
+}
+.reply-commentForm-box div button[type=reset]{
+  margin-right: 0.5em;
+}
+.reply-commentForm-box div button:hover{
+  background-color: #e07877;
+  cursor: pointer;
+}
+.reply-commentForm-box{
+  display: none;
+}
 
     /* --- GalleryRead End --- */
 
@@ -780,12 +825,16 @@ footer>div {
   /* 이미지 업로드 */
 
   /* ReadPage */
-  /* videoRead */
+    /* videoRead */
   .video-content-wrapper{
     display: flex;
     flex-direction: column;
   }
 
+    /* galleryRead */
+  .reply-box{width: 95%; margin: 1em auto; font-size: 0.9em;}
+  .reply-form textarea{width: 90%;}
+  .reply-form button{width: 10%;}
   /* footer */
   footer {display: none;}
 }
